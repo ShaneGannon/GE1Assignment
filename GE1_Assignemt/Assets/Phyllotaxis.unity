@@ -232,18 +232,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -256,7 +256,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -378,16 +378,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -403,7 +403,154 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
+--- !u!1 &233170901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233170902}
+  - component: {fileID: 233170904}
+  - component: {fileID: 233170903}
+  m_Layer: 0
+  m_Name: Phyllotrail (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233170902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233170901}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 401082057}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233170903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233170901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _degree: 102
+  _scale: 1
+  _numberStart: 6
+  _stepSize: 7
+  _iterMax: 20000
+  _useLerp: 1
+  _lerpDur: 0.2
+--- !u!96 &233170904
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233170901}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 32e1389f6623b72439ecb71eb3390b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 500
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
+      key5: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key6: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 65535
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -525,16 +672,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -550,7 +697,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -672,16 +819,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -697,7 +844,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -819,16 +966,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -844,7 +991,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -966,16 +1113,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -991,7 +1138,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -1002,6 +1149,43 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &401082056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401082057}
+  m_Layer: 0
+  m_Name: 102
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &401082057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401082056}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1593314339}
+  - {fileID: 531870234}
+  - {fileID: 1911815575}
+  - {fileID: 1364000440}
+  - {fileID: 667752572}
+  - {fileID: 233170902}
+  - {fileID: 1626207979}
+  m_Father: {fileID: 1603204980}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &416765811
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,7 +1236,7 @@ MonoBehaviour:
   _stepSize: 7
   _iterMax: 20000
   _useLerp: 1
-  _lerpDur: 0.3
+  _lerpDur: 0.2
 --- !u!96 &416765814
 TrailRenderer:
   serializedVersion: 2
@@ -1101,7 +1285,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.75
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1113,18 +1297,18 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.009791803, b: 0, a: 1}
-      key2: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
-      key3: {r: 0.031846523, g: 0, b: 1, a: 0}
-      key4: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
       key5: {r: 0.41982365, g: 0, b: 1, a: 0}
       key6: {r: 0.41982365, g: 0, b: 1, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 65535
-      ctime3: 65535
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
       ctime4: 65535
       ctime5: 65535
       ctime6: 65535
@@ -1138,7 +1322,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 2
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -1199,7 +1383,7 @@ MonoBehaviour:
   _stepSize: 7
   _iterMax: 20000
   _useLerp: 1
-  _lerpDur: 0.3
+  _lerpDur: 0.2
 --- !u!96 &505255009
 TrailRenderer:
   serializedVersion: 2
@@ -1248,7 +1432,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.75
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1260,18 +1444,18 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.009791803, b: 0, a: 1}
-      key2: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
-      key3: {r: 0.031846523, g: 0, b: 1, a: 0}
-      key4: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
       key5: {r: 0.41982365, g: 0, b: 1, a: 0}
       key6: {r: 0.41982365, g: 0, b: 1, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 65535
-      ctime3: 65535
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
       ctime4: 65535
       ctime5: 65535
       ctime6: 65535
@@ -1285,7 +1469,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 2
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -1408,18 +1592,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -1432,7 +1616,154 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
+--- !u!1 &531870233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 531870234}
+  - component: {fileID: 531870236}
+  - component: {fileID: 531870235}
+  m_Layer: 0
+  m_Name: Phyllotrail (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &531870234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531870233}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 401082057}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &531870235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531870233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _degree: 102
+  _scale: 1
+  _numberStart: 2
+  _stepSize: 7
+  _iterMax: 20000
+  _useLerp: 1
+  _lerpDur: 0.2
+--- !u!96 &531870236
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531870233}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 32e1389f6623b72439ecb71eb3390b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 500
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
+      key5: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key6: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 65535
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -1555,18 +1886,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -1579,7 +1910,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -1640,7 +1971,7 @@ MonoBehaviour:
   _stepSize: 7
   _iterMax: 20000
   _useLerp: 1
-  _lerpDur: 0.3
+  _lerpDur: 0.2
 --- !u!96 &581240126
 TrailRenderer:
   serializedVersion: 2
@@ -1689,7 +2020,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.75
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1701,18 +2032,18 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.009791803, b: 0, a: 1}
-      key2: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
-      key3: {r: 0.031846523, g: 0, b: 1, a: 0}
-      key4: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
       key5: {r: 0.41982365, g: 0, b: 1, a: 0}
       key6: {r: 0.41982365, g: 0, b: 1, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 65535
-      ctime3: 65535
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
       ctime4: 65535
       ctime5: 65535
       ctime6: 65535
@@ -1726,7 +2057,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 2
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -1849,18 +2180,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -1873,7 +2204,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -1996,18 +2327,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -2020,7 +2351,154 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
+--- !u!1 &667752571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 667752572}
+  - component: {fileID: 667752574}
+  - component: {fileID: 667752573}
+  m_Layer: 0
+  m_Name: Phyllotrail (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &667752572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667752571}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 401082057}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667752573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667752571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _degree: 102
+  _scale: 1
+  _numberStart: 5
+  _stepSize: 7
+  _iterMax: 20000
+  _useLerp: 1
+  _lerpDur: 0.2
+--- !u!96 &667752574
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667752571}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 32e1389f6623b72439ecb71eb3390b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 500
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
+      key5: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key6: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 65535
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -2302,18 +2780,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -2326,7 +2804,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -2449,18 +2927,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -2473,7 +2951,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -2561,7 +3039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -30}
+  m_LocalPosition: {x: 0, y: 1, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2715,16 +3193,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -2740,7 +3218,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -2863,18 +3341,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -2887,7 +3365,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -2995,22 +3473,22 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.2530334, b: 0, a: 1}
-      key2: {r: 1, g: 0.5835624, b: 0, a: 0}
-      key3: {r: 1, g: 0.854303, b: 0, a: 0}
-      key4: {r: 1, g: 0.44879463, b: 0, a: 0}
-      key5: {r: 0.9811321, g: 0.24228843, b: 0.16197933, a: 0}
-      key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
-      key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
+      key0: {r: 0, g: 0, b: 0, a: 1}
+      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key2: {r: 1, g: 0, b: 0.81269073, a: 0}
+      key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
+      key4: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
+      key5: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 8096
-      ctime2: 18119
-      ctime3: 25829
-      ctime4: 34695
-      ctime5: 48188
-      ctime6: 56476
-      ctime7: 60716
+      ctime1: 14456
+      ctime2: 24094
+      ctime3: 31611
+      ctime4: 50501
+      ctime5: 54548
+      ctime6: 65535
+      ctime7: 65535
       atime0: 0
       atime1: 65535
       atime2: 0
@@ -3020,7 +3498,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 7
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -3157,18 +3635,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -3181,7 +3659,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -3242,7 +3720,7 @@ MonoBehaviour:
   _stepSize: 7
   _iterMax: 20000
   _useLerp: 1
-  _lerpDur: 0.3
+  _lerpDur: 0.2
 --- !u!96 &1189842750
 TrailRenderer:
   serializedVersion: 2
@@ -3291,7 +3769,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.75
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -3303,18 +3781,18 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.009791803, b: 0, a: 1}
-      key2: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
-      key3: {r: 0.031846523, g: 0, b: 1, a: 0}
-      key4: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
       key5: {r: 0.41982365, g: 0, b: 1, a: 0}
       key6: {r: 0.41982365, g: 0, b: 1, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 65535
-      ctime3: 65535
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
       ctime4: 65535
       ctime5: 65535
       ctime6: 65535
@@ -3328,7 +3806,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 2
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -3451,18 +3929,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -3475,7 +3953,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -3598,18 +4076,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -3622,7 +4100,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -3744,16 +4222,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -3769,7 +4247,154 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
+--- !u!1 &1364000439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364000440}
+  - component: {fileID: 1364000442}
+  - component: {fileID: 1364000441}
+  m_Layer: 0
+  m_Name: Phyllotrail (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364000440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364000439}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 401082057}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1364000441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364000439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _degree: 102
+  _scale: 1
+  _numberStart: 4
+  _stepSize: 7
+  _iterMax: 20000
+  _useLerp: 1
+  _lerpDur: 0.2
+--- !u!96 &1364000442
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364000439}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 32e1389f6623b72439ecb71eb3390b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 500
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
+      key5: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key6: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 65535
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -3830,7 +4455,7 @@ MonoBehaviour:
   _stepSize: 7
   _iterMax: 20000
   _useLerp: 1
-  _lerpDur: 0.3
+  _lerpDur: 0.2
 --- !u!96 &1384369874
 TrailRenderer:
   serializedVersion: 2
@@ -3879,7 +4504,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.75
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -3891,18 +4516,18 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.009791803, b: 0, a: 1}
-      key2: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
-      key3: {r: 0.031846523, g: 0, b: 1, a: 0}
-      key4: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
       key5: {r: 0.41982365, g: 0, b: 1, a: 0}
       key6: {r: 0.41982365, g: 0, b: 1, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 65535
-      ctime3: 65535
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
       ctime4: 65535
       ctime5: 65535
       ctime6: 65535
@@ -3916,7 +4541,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 2
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -4088,16 +4713,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -4113,7 +4738,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -4161,6 +4786,153 @@ Transform:
   m_Father: {fileID: 1603204980}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1593314338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593314339}
+  - component: {fileID: 1593314341}
+  - component: {fileID: 1593314340}
+  m_Layer: 0
+  m_Name: Phyllotrail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593314339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593314338}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 401082057}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593314340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593314338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _degree: 102
+  _scale: 1
+  _numberStart: 1
+  _stepSize: 7
+  _iterMax: 20000
+  _useLerp: 1
+  _lerpDur: 0.2
+--- !u!96 &1593314341
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593314338}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 32e1389f6623b72439ecb71eb3390b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 500
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
+      key5: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key6: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 65535
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!1 &1603204979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,6 +4966,7 @@ Transform:
   - {fileID: 1853884642}
   - {fileID: 1912329186}
   - {fileID: 1525619042}
+  - {fileID: 401082057}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4308,16 +5081,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -4333,7 +5106,154 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
+--- !u!1 &1626207978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1626207979}
+  - component: {fileID: 1626207981}
+  - component: {fileID: 1626207980}
+  m_Layer: 0
+  m_Name: Phyllotrail (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1626207979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626207978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 401082057}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1626207980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626207978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _degree: 102
+  _scale: 1
+  _numberStart: 7
+  _stepSize: 7
+  _iterMax: 20000
+  _useLerp: 1
+  _lerpDur: 0.2
+--- !u!96 &1626207981
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626207978}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 32e1389f6623b72439ecb71eb3390b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 500
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
+      key5: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key6: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 65535
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -4394,7 +5314,7 @@ MonoBehaviour:
   _stepSize: 7
   _iterMax: 20000
   _useLerp: 1
-  _lerpDur: 0.3
+  _lerpDur: 0.2
 --- !u!96 &1655265046
 TrailRenderer:
   serializedVersion: 2
@@ -4443,7 +5363,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.75
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -4455,18 +5375,18 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.009791803, b: 0, a: 1}
-      key2: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
-      key3: {r: 0.031846523, g: 0, b: 1, a: 0}
-      key4: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
       key5: {r: 0.41982365, g: 0, b: 1, a: 0}
       key6: {r: 0.41982365, g: 0, b: 1, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 65535
-      ctime3: 65535
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
       ctime4: 65535
       ctime5: 65535
       ctime6: 65535
@@ -4480,7 +5400,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 2
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -4603,18 +5523,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -4627,7 +5547,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -4750,18 +5670,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -4774,7 +5694,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -4896,16 +5816,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -4921,7 +5841,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -5043,16 +5963,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -5068,7 +5988,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -5190,16 +6110,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -5215,7 +6135,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -5375,18 +6295,18 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0, g: 1, b: 0.97092485, a: 1}
-      key2: {r: 0, g: 1, b: 0.6297672, a: 0}
-      key3: {r: 0, g: 0.9433962, b: 0.9138706, a: 0}
-      key4: {r: 0, g: 0.6176338, b: 1, a: 0}
+      key1: {r: 0, g: 1, b: 0.966805, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
       key6: {r: 1, g: 0.2688679, b: 0.4351645, a: 0}
       key7: {r: 1, g: 0.25943398, b: 0.51790637, a: 0}
       ctime0: 0
-      ctime1: 14456
-      ctime2: 25443
-      ctime3: 38550
-      ctime4: 50693
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
       ctime5: 65535
       ctime6: 56476
       ctime7: 60716
@@ -5399,7 +6319,154 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 6
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
+--- !u!1 &1911815574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1911815575}
+  - component: {fileID: 1911815577}
+  - component: {fileID: 1911815576}
+  m_Layer: 0
+  m_Name: Phyllotrail (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1911815575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911815574}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 401082057}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911815576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911815574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _degree: 102
+  _scale: 1
+  _numberStart: 3
+  _stepSize: 7
+  _iterMax: 20000
+  _useLerp: 1
+  _lerpDur: 0.2
+--- !u!96 &1911815577
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911815574}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 32e1389f6623b72439ecb71eb3390b85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 500
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
+      key5: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key6: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 65535
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -5558,16 +6625,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -5583,7 +6650,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -5705,16 +6772,16 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.41982365, g: 0, b: 1, a: 1}
+      key0: {r: 0, g: 0.016850948, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
       key2: {r: 1, g: 0, b: 0.81269073, a: 0}
       key3: {r: 0.41183522, g: 0.16197933, b: 0.9811321, a: 0}
       key4: {r: 0.031846523, g: 0, b: 1, a: 0}
       key5: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
       key6: {r: 0.01332472, g: 0, b: 0.2735849, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 14456
+      ctime0: 193
+      ctime1: 65535
       ctime2: 21010
       ctime3: 31611
       ctime4: 43754
@@ -5730,7 +6797,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -5791,7 +6858,7 @@ MonoBehaviour:
   _stepSize: 7
   _iterMax: 20000
   _useLerp: 1
-  _lerpDur: 0.3
+  _lerpDur: 0.2
 --- !u!96 &2118661356
 TrailRenderer:
   serializedVersion: 2
@@ -5840,7 +6907,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.75
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -5852,18 +6919,18 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.009791803, b: 0, a: 1}
-      key2: {r: 0, g: 0.045318063, b: 0.4528302, a: 0}
-      key3: {r: 0.031846523, g: 0, b: 1, a: 0}
-      key4: {r: 0.41982365, g: 0, b: 1, a: 0}
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0.992331, b: 1, a: 0}
       key5: {r: 0.41982365, g: 0, b: 1, a: 0}
       key6: {r: 0.41982365, g: 0, b: 1, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
-      ctime2: 65535
-      ctime3: 65535
+      ctime1: 28142
+      ctime2: 28334
+      ctime3: 36237
       ctime4: 65535
       ctime5: 65535
       ctime6: 65535
@@ -5877,7 +6944,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 2
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
