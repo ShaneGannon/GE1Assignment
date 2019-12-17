@@ -1804,8 +1804,9 @@ Transform:
   - {fileID: 625185794}
   - {fileID: 1788941626}
   - {fileID: 1877721330}
+  - {fileID: 1603204980}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &575600752
 GameObject:
@@ -2292,7 +2293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _degree: 30
+  _degree: 120
   _scale: 1
   _numberStart: 10000
   _stepSize: 1
@@ -2359,21 +2360,21 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.9245283, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.43685648, b: 0, a: 1}
-      key2: {r: 1, g: 0.97917986, b: 0, a: 0}
-      key3: {r: 0.2966509, g: 1, b: 0, a: 0}
-      key4: {r: 0, g: 1, b: 0.67599964, a: 0}
-      key5: {r: 0, g: 0.008930683, b: 1, a: 0}
-      key6: {r: 0.44591188, g: 0, b: 1, a: 0}
+      key0: {r: 0.3066038, g: 0.45193085, b: 1, a: 1}
+      key1: {r: 0.3066038, g: 0.45193085, b: 1, a: 1}
+      key2: {r: 0.9261813, g: 0, b: 1, a: 0}
+      key3: {r: 0.9261813, g: 0, b: 1, a: 0}
+      key4: {r: 0.9261813, g: 0, b: 1, a: 0}
+      key5: {r: 0.9261813, g: 0, b: 1, a: 0}
+      key6: {r: 0.9261813, g: 0, b: 1, a: 0}
       key7: {r: 0.9261813, g: 0, b: 1, a: 0}
       ctime0: 0
-      ctime1: 10987
-      ctime2: 21010
-      ctime3: 30069
-      ctime4: 39128
-      ctime5: 49344
-      ctime6: 58982
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
       ctime7: 65535
       atime0: 0
       atime1: 65535
@@ -2384,7 +2385,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 8
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -3602,13 +3603,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefdc0bee0f359c49ae53be81d1572b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _degree: 137.5
+  _degree: 50
   _scale: 1
   _numberStart: 0
   _stepSize: 1
   _iterMax: 120
-  _useLerp: 0
-  _lerpDur: 0.1
+  _useLerp: 1
+  _lerpDur: 0.2
 --- !u!96 &1086370807
 TrailRenderer:
   serializedVersion: 2
@@ -5144,7 +5145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1603204980
 Transform:
   m_ObjectHideFlags: 0
@@ -5152,8 +5153,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603204979}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 687332371}
@@ -5163,7 +5164,7 @@ Transform:
   - {fileID: 1912329186}
   - {fileID: 1525619042}
   - {fileID: 401082057}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 572353265}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1621385736
