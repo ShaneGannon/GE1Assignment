@@ -31,3 +31,5 @@ What resources were useful for you (websites, tutorials, assets etc)
 
 Embed a youtube video of your assignment. I recommend doing Build and Run from Unity so that the video looks at its best and running anc capturing at 1080P.
 You can use Windows + ALt + R on Windows, or QuickTime player on the mac or use OBS on Linux to capture video
+
+after watching some tutorials i 
