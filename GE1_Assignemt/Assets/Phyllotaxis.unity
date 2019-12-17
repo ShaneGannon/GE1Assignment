@@ -168,7 +168,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 6
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &167719395
@@ -315,7 +315,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 7
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &196403743
@@ -462,7 +462,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 6
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &233170904
@@ -609,7 +609,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 1
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &295923838
@@ -756,7 +756,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 5
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &312523143
@@ -903,7 +903,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 3
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &324844695
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 1
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &359134958
@@ -1234,7 +1234,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 3
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &416765814
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 4
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &505255009
@@ -1528,7 +1528,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 7
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &521200930
@@ -1675,7 +1675,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 2
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &531870236
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 2
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &575600755
@@ -1969,7 +1969,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 5
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &581240126
@@ -2116,7 +2116,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 2
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &620084654
@@ -2263,7 +2263,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 3
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &648180529
@@ -2410,7 +2410,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 5
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &667752574
@@ -2716,7 +2716,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 6
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &813899719
@@ -2863,7 +2863,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 7
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &938751213
@@ -3039,7 +3039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -100}
+  m_LocalPosition: {x: 0, y: 1, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3130,7 +3130,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 3
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &988371184
@@ -3277,7 +3277,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 4
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1070347761
@@ -3410,7 +3410,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 0
   _stepSize: 1
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 0
   _lerpDur: 0.1
 --- !u!96 &1086370807
@@ -3571,7 +3571,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 1
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1104334808
@@ -3718,7 +3718,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 1
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &1189842750
@@ -3865,7 +3865,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 5
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1303821750
@@ -4012,7 +4012,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 3
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1345159311
@@ -4159,7 +4159,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 5
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1353875155
@@ -4306,7 +4306,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 4
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &1364000442
@@ -4453,7 +4453,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 7
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &1384369874
@@ -4650,7 +4650,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 2
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1502941652
@@ -4834,7 +4834,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 1
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &1593314341
@@ -5018,7 +5018,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 4
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1621385739
@@ -5165,7 +5165,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 7
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &1626207981
@@ -5312,7 +5312,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 6
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &1655265046
@@ -5459,7 +5459,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 1
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1727453032
@@ -5606,7 +5606,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 5
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1730435586
@@ -5753,7 +5753,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 2
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1797224915
@@ -5900,7 +5900,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 6
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1804188913
@@ -6047,7 +6047,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 6
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1820499809
@@ -6231,7 +6231,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 4
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1873839786
@@ -6378,7 +6378,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 3
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &1911815577
@@ -6562,7 +6562,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 7
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &1920016373
@@ -6709,7 +6709,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 4
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 87
   _useLerp: 1
   _lerpDur: 0.3
 --- !u!96 &2054261948
@@ -6856,7 +6856,7 @@ MonoBehaviour:
   _scale: 1
   _numberStart: 2
   _stepSize: 7
-  _iterMax: 20000
+  _iterMax: 120
   _useLerp: 1
   _lerpDur: 0.2
 --- !u!96 &2118661356
