@@ -59,15 +59,23 @@ public class TimerControllers : MonoBehaviour
         }
         if (Time.realtimeSinceStartup >= 80)
         {
-            square.GetComponent<Phyllotaxis>().enabled = false;
+            triangle.GetComponent<Phyllotaxis>().enabled = false;
         }
         if (Time.realtimeSinceStartup >= 83)
         {
-            square.GetComponent<Phyllotaxis>().enabled = false;
+            circle1.GetComponent<Phyllotaxis>().enabled = false;
         }
         if (Time.realtimeSinceStartup >= 83)
         {
-            square.GetComponent<Phyllotaxis>().enabled = false;
+            circle2.GetComponent<Phyllotaxis>().enabled = false;
+        }
+
+        if (Time.realtimeSinceStartup >= 95)
+        {
+            innertunnel.SetActive(false);
+            camera.transform.Translate (new Vector3(0, 0, -2044.3f));
+            camera.transform.rotation = new Quaternion(90.0f, 0, 0, 0);
+            camera.GetComponent<Rotator2>().enabled = true;
         }
     }
 }
