@@ -24,15 +24,22 @@ Description of what you did?
 
 Was fascinated with the fibonacci sequence and how it is seen in nature through phyllotaxis. I wanted to use this kind of maths sequence to create visuals.
 Firstly after coding the sequence and attaching it to a game object (seen in and commented out in phyllotaxis.cs). I then played around with different variable values
-to see what looked cool. I then layerd these and created my own gradiants and colours in unity to use on them. These layered sequences are seen in the SelfDrawer Game Object.
+to see what looked cool. I then layered these and created my own gradients and colours in unity to use on them. These layered sequences are seen in the SelfDrawer Game Object.
 
-After creating the self drawing object i wanted to create a 3d tunnel. I did this by 
+After creating the self drawing object i wanted to create a 3d tunnel. I did this by creating some new phyllotaxis shapes and increasing the z position with the camera anchored
+behind. This creates the 3d tunnel effect. I also messed around with putting the same visualiser shapes into the tunnel and the results were very cool.
 
-
+finally i wanted to add some audio visualisation to the project. Firstly i read in audio data and broke them down into 512 smaples and then broke them down into 8 frequecy
+bands. This allowed me to make 8 visualisers with nice height and range. I also added a buffer to make them move more smoothly. I then combined these 3 elements using timers
+to enable and disable GOs and scripts to create a performance with the song. I was sadly not able to implement all the things i wanted but am very happy with what i achieved
+and hope to continue this work and apply it to my own DJing.
 
 
 
 What you are most proud of about the assignment?
+
+The performance at the end. As a DJ i love performing and even though its only a 2/3 minute performance of visuals its cool to think that 'wow i created that'. This bodes
+well for the future where i hope to do a lot more projects like this one for my own professional use.
 
 
 
@@ -40,7 +47,13 @@ What resources were useful for you (websites, tutorials, assets etc)?
 
 The unity documentation and a couple tutorials combined with the work form this semester to enable me to do this project.
 
-Embed a youtube video of your assignment. I recommend doing Build and Run from Unity so that the video looks at its best and running anc capturing at 1080P.
-You can use Windows + ALt + R on Windows, or QuickTime player on the mac or use OBS on Linux to capture video
 
 
+
+YT VIDEO
+https://www.youtube.com/watch?v=Q_Wjxtx1JPA
+
+
+Becomes:
+
+[![YouTube](http://img.youtube.com/vi/Q_Wjxtx1JPA/0.jpg)](https://www.youtube.com/watch?v=Q_Wjxtx1JPA)

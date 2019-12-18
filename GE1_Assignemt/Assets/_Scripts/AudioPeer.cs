@@ -81,7 +81,7 @@ public class AudioPeer : MonoBehaviour
 
         int counter = 0;
 
-        for(int i = 0; i < 8; i++)
+        for (int i = 0; i < 8; i++)
         {
             float average = 0;
             int sampleCount = (int)Mathf.Pow(2, i) * 2;
@@ -91,18 +91,16 @@ public class AudioPeer : MonoBehaviour
                 sampleCount += 2;
             }
 
-            for(int j = 0; j < sampleCount; j++)
+            for (int j = 0; j < sampleCount; j++)
             {
                 average += _samples[counter] * (counter = 1);
                 counter++;
 
                 average /= counter;
 
-                _freqBand[i] = average * Random.Range(5,15);
+                _freqBand[i] = average * Random.Range(5, 15);
             }
-            
+
         }
     }
-
-    
 }

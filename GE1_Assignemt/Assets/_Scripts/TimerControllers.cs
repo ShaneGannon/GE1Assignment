@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TimerControllers : MonoBehaviour
 {
+    //all code here is for starting and stopping scripts and GOs at specific points in the song
     public GameObject camera;
     public GameObject visualiser;
     public GameObject tunnel;
@@ -12,6 +13,10 @@ public class TimerControllers : MonoBehaviour
     public GameObject triangle;
     public GameObject circle1;
     public GameObject circle2;
+    public GameObject visualiser2;
+    private bool neverdone = true;
+    private bool neverdone2 = true;
+    private bool neverdone3 = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +46,11 @@ public class TimerControllers : MonoBehaviour
         if (Time.realtimeSinceStartup >= 48)
         {
             camera.GetComponent<PhylloTunnel>().enabled = true;
+            if (neverdone)
+            {
+                camera.transform.rotation = new Quaternion(0, 0, 0, 0);
+                neverdone = false;
+            }
         }
 
         if (Time.realtimeSinceStartup >= 62)
@@ -70,12 +80,40 @@ public class TimerControllers : MonoBehaviour
             circle2.GetComponent<Phyllotaxis>().enabled = false;
         }
 
-        if (Time.realtimeSinceStartup >= 95)
+        if (Time.realtimeSinceStartup >= 90)
         {
             innertunnel.SetActive(false);
-            camera.transform.Translate (new Vector3(0, 0, -2044.3f));
-            camera.transform.rotation = new Quaternion(90.0f, 0, 0, 0);
+            camera.GetComponent<PhylloTunnel>().enabled = false;
+            camera.GetComponent<Rotation>().enabled = false;
+            if (neverdone2)
+            {
+                camera.transform.position = new Vector3(0, 0, -2044.3f);
+                camera.transform.rotation = new Quaternion(90.0f, 0, 0, 0);
+                visualiser2.SetActive(true);
+
+
+                camera.transform.rotation = new Quaternion(10.0f, 0, 0, 0);
+
+                neverdone2 = false;
+            }
+
             camera.GetComponent<Rotator2>().enabled = true;
+
+        }
+
+        if (Time.realtimeSinceStartup >= 95)
+        {
+            if (neverdone3)
+            {
+                camera.transform.rotation = new Quaternion(35, 0, 0, 0);
+                neverdone3 = false;
+            }
+            camera.transform.rotation = new Quaternion(35, 0, 0, 0);
+            square.GetComponent<Phyllotaxis>().enabled = true;
+            triangle.GetComponent<Phyllotaxis>().enabled = true;
+            circle1.GetComponent<Phyllotaxis>().enabled = true;
+            circle2.GetComponent<Phyllotaxis>().enabled = true;
+            camera.GetComponent<Rotator2>().enabled = false;
         }
     }
 }
