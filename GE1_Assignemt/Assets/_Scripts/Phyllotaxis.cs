@@ -109,7 +109,7 @@ public class Phyllotaxis : MonoBehaviour
                     _iterCount++;
 
                     //If less iterations than max allowed have occured, continue lerping otherwise stop
-                    if(_iterCount <= _iterMax)
+                    if (_iterCount <= _iterMax)
                     {
                         StartLerping();
                     }
@@ -126,6 +126,7 @@ public class Phyllotaxis : MonoBehaviour
             transform.localPosition = new Vector3(position.x, position.y, 0);
             _number += _stepSize;
             _iterCount++;
+
         }
     }
 }
