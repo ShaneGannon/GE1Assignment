@@ -20,16 +20,27 @@ https://www.youtube.com/watch?v=ZjWBGvVb7Vg&list=PL1n0B6z4e_E5qaYwUOlJ63XI2OR9ty
 https://www.youtube.com/watch?v=S1h6h17zOMw&list=PL1n0B6z4e_E5qaYwUOlJ63XI2OR9ty7Bs&index=4
 https://www.youtube.com/watch?v=MXm9OmzRe2o&list=PL1n0B6z4e_E5qaYwUOlJ63XI2OR9ty7Bs&index=1
 
-Description of what you did
+Description of what you did?
+
+Was fascinated with the fibonacci sequence and how it is seen in nature through phyllotaxis. I wanted to use this kind of maths sequence to create visuals.
+Firstly after coding the sequence and attaching it to a game object (seen in and commented out in phyllotaxis.cs). I then played around with different variable values
+to see what looked cool. I then layerd these and created my own gradiants and colours in unity to use on them. These layered sequences are seen in the SelfDrawer Game Object.
+
+After creating the self drawing object i wanted to create a 3d tunnel. I did this by 
 
 
-What you are most proud of about the assignment
 
 
-What resources were useful for you (websites, tutorials, assets etc)
 
+What you are most proud of about the assignment?
+
+
+
+What resources were useful for you (websites, tutorials, assets etc)?
+
+The unity documentation and a couple tutorials combined with the work form this semester to enable me to do this project.
 
 Embed a youtube video of your assignment. I recommend doing Build and Run from Unity so that the video looks at its best and running anc capturing at 1080P.
 You can use Windows + ALt + R on Windows, or QuickTime player on the mac or use OBS on Linux to capture video
 
-after watching some tutorials i 
+
