@@ -6,8 +6,9 @@ using UnityEngine;
 public class AudioPeer : MonoBehaviour
 {
     //Instantiate Audio source and split frequency spectrum into 512 bins
+    //Make ststic so other scripts can access it
     AudioSource _audioSource;
-    public float[] _samples = new float[512];
+    public static float[] _samples = new float[512];
 
     // Start is called before the first frame update
     void Start()
